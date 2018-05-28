@@ -3,7 +3,7 @@
     "meta": {
         "version": "PTDL_v1"
     },
-    "exported_at": "2018-02-26T20:41:35-05:00",
+    "exported_at": "2018-05-28T09:42:38+02:00",
     "name": "Tekkit Legends",
     "author": "aevum@decess.us",
     "description": "The ancient power of Tekkits past return in this legendary pack! Wield the philosopher's stone, ride the rails, breed the bees, and much, much more! This pack will remind you of what you've always loved about Tekkit, while bringing you new mods to discover and enjoy!\r\n\r\nhttps:\/\/www.technicpack.net\/modpack\/tekkit-legends.735902",
@@ -17,7 +17,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/ash\r\n# Forge Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\napk update\r\napk add curl\r\n\r\ncd \/mnt\/server\r\n\r\nhttp:\/\/servers.technicpack.net\/Technic\/servers\/tekkit-legends\/Tekkit_Legends_Server_v1.1.1.zip\r\ncurl -sS http:\/\/servers.technicpack.net\/Technic\/servers\/tekkit-legends\/Tekkit_Legends_Server_v$MODPACK_VERSION.zip -o TekkitLegends_$MODPACK_VERSION.zip\r\n\r\nunzip TekkitLegends_$MODPACK_VERSION.zip\r\n\r\nrm -rf TekkitLegends_$MODPACK_VERSION.zip",
+            "script": "#!\/bin\/ash\r\n# Forge Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\napk update\r\napk add curl\r\n\r\ncd \/mnt\/server\r\n\r\ncurl -sS http:\/\/servers.technicpack.net\/Technic\/servers\/tekkit-legends\/Tekkit_Legends_Server_v$MODPACK_VERSION.zip -o TekkitLegends_$MODPACK_VERSION.zip\r\n\r\nunzip TekkitLegends_$MODPACK_VERSION.zip\r\n\r\nrm -rf TekkitLegends_$MODPACK_VERSION.zip",
             "container": "alpine:3.7",
             "entrypoint": "ash"
         }
